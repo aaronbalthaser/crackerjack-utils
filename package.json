@@ -4,10 +4,11 @@
   "description": "",
   "main": "lib/main.js",
   "scripts": {
+    "prebuild": "tslint src/**/*.ts",
     "build": "webpack --config webpack/production.config.js",
     "dev": "webpack-dev-server --config webpack/development.config.js",
     "test": "jest --watch",
-    "lint": "eslint ."
+    "lint": "tslint src/**/*.ts"
   },
   "author": "Aaron Balthaser",
   "license": "ISC",
@@ -18,12 +19,24 @@
     "type": "git",
     "url": "https://github.com/aaronbalthaser/crackerjack-utils"
   },
+  "bugs": {
+    "url": "https://github.com/aaronbalthaser/crackerjack-utils/issues"
+  },
+  "homepage": "https://github.com/aaronbalthaser/crackerjack-utils#readme",
+  "keywords": [
+    "npm",
+    "node",
+    "utils",
+    "javascript"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.0",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "html-loader": "^1.1.0",
