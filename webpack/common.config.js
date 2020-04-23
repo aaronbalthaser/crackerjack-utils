@@ -18,7 +18,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            babelrc: true,
+            babelrc: false,
             presets: ['@babel/env'],
             plugins: []
           }
@@ -31,7 +31,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              babelrc: true
+              babelrc: false
             }
           },
           {

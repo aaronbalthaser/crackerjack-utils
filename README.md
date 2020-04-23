@@ -1,10 +1,25 @@
 # Crackerjack Utils
 
-A utilites package containing helper methods for UI Development.
+A utilites package containing helper methods for Javascript Development.
 
+## Table of Contents
 
+- [Installation](#installation)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Team](#team)
+- [FAQ](#faq)
+- [Support](#support)
+- [License](#license)
+- [Versioning](#Versioning)
 
-## Versioning Telemetry
+## Installation
+
+```
+npm i @crackerjack/crackerjack-utils
+```
+
+## Versioning
 
 ### Develpment
 ```
