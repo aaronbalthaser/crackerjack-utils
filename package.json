@@ -1,9 +1,10 @@
 {
   "name": "@crackerjack/crackerjack-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "lib/main.js",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "prebuild": "jest --coverage && eslint \"src/**/*.ts\"",
     "build": "webpack --config webpack/production.config.js",
     "dev": "webpack-dev-server --config webpack/development.config.js",
